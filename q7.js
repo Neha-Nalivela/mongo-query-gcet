@@ -21,14 +21,14 @@ db.employees.find({
 });
 
 db.employees.find({ salary: { $not: { $lt: 4000 } } });
-
+//if dept not exists
 db.employees.find({ department: { $exists: false } });
-
+//if dept exists
 db.employees.find({ department: { $exists: true } });
-
+//equal
 db.employees.find({ name: { $regex: "Cathy" } });
-
+//starting
 db.employees.find({ name: { $regex: "^C" } });
-
+//ending
 db.employees.find({ name: { $regex: "G$" } });
 
