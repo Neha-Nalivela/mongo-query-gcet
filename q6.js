@@ -9,4 +9,4 @@ db.employees.insertOne({
   location: ["FL", "OH"],
   date: Date(),
 });
-db.employees.deleteOne({ department: "Admin" });
+db.employees.deleteMany({ department: "Admin" });
